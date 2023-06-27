@@ -4,11 +4,11 @@ import pandas as pd
 # connect with the data base;
 try:
    conn =  mariadb.connect(
-           user = "username",
-           password = "your_password",
-           host = "your_host",
-           port = 0, #your port
-           database = "database_name"
+           user = "your_user_name",
+           password = "user_password",
+           host = "user_host",
+           port = 0,
+           database = "database"
            )
 except Exception as e:
     print(f"Error to connect: {e}")
